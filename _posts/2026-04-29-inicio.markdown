@@ -1,0 +1,35 @@
+---
+layout: post
+title: "¡Bienvenido a mi Portafolio!"
+date: 2026-04-29 10:00:00 +0200
+categories: personal
+---
+
+Hola, soy **Javier Cabello Díaz** y este es el comienzo oficial de mi portafolio web.
+
+## ¿Quién soy?
+
+Soy un estudiante de **Desarrollo de Aplicaciones Web (DAW)** actualmente terminando mis prácticas profesionales. Mi especializacion está en el **backend** con **PHP y Laravel**, aunque creo que un buen desarrollador debe estar siempre en contacto con las nuevas tecnologías.
+
+## ¿Por qué este portafolio?
+
+Este espacio es mi **vitrina personal** donde compartiré:
+
+- **Proyectos personales** que demuestren mis habilidades
+- **Mi progresión profesional** y crecimiento como desarrollador
+- **Experiencias y lecciones** del mundo real
+
+## Tecnologías que uso
+
+- **Backend:** PHP 8.2+, Laravel 12, API REST
+- **Frontend:** HTML5, CSS3, JavaScript, Blade
+- **Bases de Datos:** MySQL, SQLite
+- **DevOps:** Git, Docker, Linux
+
+## ¿Cuál es el siguiente paso?
+
+Estoy buscando mi **primera oportunidad profesional** como desarrollador web. Si tienes una oferta, feedback o simplemente quieres hablar de desarrollo, **[¡no dudes en contactarme!](/contacto/)**
+
+---
+
+Mantente atento a los próximos posts donde compartiré mis proyectos y aprendizajes.

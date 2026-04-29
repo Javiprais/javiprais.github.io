@@ -1,18 +1,31 @@
 ---
 layout: page
-title: About
+title: Acerca de Mí
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## Sobre Mí
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Soy **Javier Cabello Díaz**, estudiante de **Desarrollo de Aplicaciones Web (DAW)** actualmente finalizando mis prácticas profesionales. 
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Mi pasión está en el **desarrollo backend**, especialmente trabajando con **PHP y Laravel**.
 
+## Mi Stack Técnico
 
-[jekyll-organization]: https://github.com/jekyll
+- **Backend:** PHP 8.2+, Laravel 12, APIs REST
+- **Frontend:** HTML5, CSS3, JavaScript, Blade
+- **Bases de Datos:** MySQL, SQLite, optimización de queries
+- **Herramientas:** Git, Composer, Docker, Linux
+- **Testing:** PHPUnit, pruebas unitarias e integración
+
+## Mi Filosofía
+
+Creo en el **aprendizaje continuo**. Aunque me especializo en backend, siempre estoy explorando nuevas tecnologías y mejorando mis habilidades.
+
+## Busco
+
+Mi **primera oportunidad profesional** como desarrollador web. Estoy listo para asumir responsabilidades y crecer junto a un equipo que valore la excelencia técnica.
+
+---
+
+¿Quieres trabajar conmigo o simplemente charlar sobre desarrollo? [Contacta conmigo](/contacto/).

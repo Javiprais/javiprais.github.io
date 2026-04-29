@@ -1,0 +1,100 @@
+---
+# Front matter del sitio Jekyll
+---
+
+// ========================================
+// MAIN STYLESHEET
+// Imports minima theme and custom styles
+// ========================================
+
+@import "variables";
+@import "mixins";
+
+// Import the minima theme from gems
+@import "minima";
+
+// Import our custom styles (overrides minima)
+@import "custom";
+
+// ========================================
+// THEME OVERRIDES - Dark Minima
+// ========================================
+
+// Override minima's default colors
+.site-title {
+  color: $color-olive-primary;
+  font-size: 1.8rem;
+
+  &:hover {
+    color: $color-olive-light;
+  }
+}
+
+.site-header {
+  border-bottom: 2px solid $color-olive-dark;
+  background-color: $color-dark-secondary;
+}
+
+.site-footer {
+  background-color: $color-dark-secondary;
+  border-top: 2px solid $color-olive-dark;
+}
+
+.site-nav {
+  .page-link {
+    color: $color-text-light;
+
+    &:hover {
+      color: $color-olive-primary;
+    }
+  }
+}
+
+// Post and article styling
+.post-header {
+  margin-bottom: $spacing-lg;
+  border-bottom: 2px solid $color-dark-tertiary;
+  padding-bottom: $spacing-lg;
+}
+
+.post-title {
+  color: $color-olive-primary;
+  margin-top: 0;
+}
+
+.post-meta {
+  color: $color-text-muted;
+}
+
+.post-content {
+  h2 {
+    color: $color-olive-primary;
+    margin-top: $spacing-xl;
+    margin-bottom: $spacing-md;
+    border-bottom: 1px solid $color-dark-tertiary;
+    padding-bottom: $spacing-md;
+  }
+
+  h3, h4, h5, h6 {
+    color: $color-olive-primary;
+    margin-top: $spacing-lg;
+    margin-bottom: $spacing-md;
+  }
+}
+
+// Highlight / Code syntax
+.highlight {
+  background-color: $color-dark-secondary;
+  border-left: 4px solid $color-olive-dark;
+  margin-bottom: $spacing-lg;
+  overflow-x: auto;
+
+  code {
+    color: $color-olive-light;
+  }
+}
+
+// Override default minima backgrounds
+.page-content {
+  background-color: $color-dark-bg;
+}

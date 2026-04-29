@@ -1,0 +1,511 @@
+// ========================================
+// CUSTOM STYLES - Dark Theme with Olive Green
+// ========================================
+
+@import "variables";
+@import "mixins";
+
+// ========================================
+// GLOBAL STYLES
+// ========================================
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $base-font-size;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $color-dark-bg;
+  color: $color-text-light;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  background-attachment: fixed;
+}
+
+// ========================================
+// TYPOGRAPHY
+// ========================================
+
+h1, h2, h3, h4, h5, h6 {
+  @include heading-olive;
+}
+
+h1 { font-size: $heading-1-size; }
+h2 { font-size: $heading-2-size; }
+h3 { font-size: $heading-3-size; }
+h4 { font-size: $heading-4-size; }
+h5 { font-size: $heading-5-size; }
+h6 { font-size: $heading-6-size; }
+
+p {
+  margin-bottom: $spacing-md;
+  color: $color-text-light;
+  font-size: 1rem;
+}
+
+a {
+  color: $color-olive-primary;
+  text-decoration: none;
+  transition: all $transition-fast;
+  position: relative;
+
+  &:hover {
+    color: $color-olive-light;
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: darken($color-olive-primary, 15%);
+  }
+}
+
+strong, b {
+  color: $color-olive-light;
+  font-weight: 600;
+}
+
+em, i {
+  color: $color-olive-primary;
+  font-style: italic;
+}
+
+// ========================================
+// CODE BLOCKS
+// ========================================
+
+code {
+  background-color: $color-dark-secondary;
+  color: $color-olive-primary;
+  padding: 2px 6px;
+  border-radius: $border-radius-sm;
+  font-family: $code-font-family;
+  font-size: 0.9em;
+}
+
+pre {
+  background-color: $color-dark-secondary;
+  border-left: 4px solid $color-olive-dark;
+  padding: $spacing-md;
+  border-radius: $border-radius-md;
+  overflow-x: auto;
+  margin-bottom: $spacing-lg;
+  box-shadow: $shadow-md;
+
+  code {
+    background: none;
+    color: $color-olive-light;
+    padding: 0;
+    border-radius: 0;
+  }
+}
+
+// ========================================
+// LISTS
+// ========================================
+
+ul, ol {
+  margin-left: $spacing-lg;
+  margin-bottom: $spacing-md;
+
+  li {
+    margin-bottom: $spacing-sm;
+    color: $color-text-light;
+
+    strong {
+      color: $color-olive-light;
+    }
+  }
+}
+
+// ========================================
+// BLOCKQUOTES
+// ========================================
+
+blockquote {
+  border-left: 4px solid $color-olive-dark;
+  padding-left: $spacing-md;
+  margin: $spacing-lg 0;
+  color: $color-text-muted;
+  font-style: italic;
+  background-color: rgba($color-olive-dark, 0.05);
+  padding: $spacing-md;
+  border-radius: $border-radius-sm;
+}
+
+// ========================================
+// HORIZONTAL RULES
+// ========================================
+
+hr {
+  border: none;
+  border-top: 2px solid $color-dark-tertiary;
+  margin: $spacing-xl 0;
+}
+
+// ========================================
+// FORMS
+// ========================================
+
+input,
+textarea,
+select {
+  @include input-base;
+  margin-bottom: $spacing-md;
+
+  &:focus {
+    outline: none;
+    border-color: $color-olive-primary;
+    background-color: rgba($color-dark-tertiary, 0.5);
+    box-shadow: 0 0 0 3px rgba($color-olive-primary, 0.1);
+  }
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+label {
+  display: block;
+  margin-bottom: $spacing-sm;
+  color: $color-olive-primary;
+  font-weight: 500;
+}
+
+button,
+input[type="submit"],
+input[type="button"] {
+  @include button-primary;
+}
+
+// ========================================
+// TABLES
+// ========================================
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: $spacing-lg;
+  background-color: $color-dark-secondary;
+  box-shadow: $shadow-sm;
+  border-radius: $border-radius-md;
+  overflow: hidden;
+
+  th {
+    background-color: $color-dark-tertiary;
+    color: $color-olive-primary;
+    padding: $spacing-md;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid $color-olive-dark;
+  }
+
+  td {
+    padding: $spacing-md;
+    border-bottom: 1px solid $color-dark-tertiary;
+    color: $color-text-light;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+
+  tr:hover {
+    background-color: rgba($color-olive-primary, 0.05);
+  }
+}
+
+// ========================================
+// HEADER & NAVIGATION
+// ========================================
+
+header {
+  background: linear-gradient(135deg, $color-dark-bg 0%, $color-dark-secondary 100%);
+  border-bottom: 2px solid $color-olive-dark;
+  padding: $spacing-lg 0;
+  box-shadow: $shadow-md;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  @include flex-between;
+  flex-wrap: wrap;
+  gap: $spacing-md;
+
+  a {
+    color: $color-text-light;
+    font-weight: 500;
+    padding: $spacing-sm $spacing-md;
+    border-radius: $border-radius-sm;
+    transition: all $transition-fast;
+
+    &:hover {
+      color: $color-olive-light;
+      background-color: rgba($color-olive-dark, 0.1);
+    }
+
+    &.active {
+      color: $color-olive-primary;
+      border-bottom: 2px solid $color-olive-primary;
+    }
+  }
+}
+
+// ========================================
+// FOOTER
+// ========================================
+
+footer {
+  background-color: $color-dark-secondary;
+  border-top: 2px solid $color-olive-dark;
+  padding: $spacing-xl $spacing-lg;
+  margin-top: $spacing-xxl;
+  text-align: center;
+  color: $color-text-muted;
+
+  p {
+    margin-bottom: $spacing-sm;
+  }
+
+  a {
+    color: $color-olive-primary;
+
+    &:hover {
+      color: $color-olive-light;
+    }
+  }
+}
+
+// ========================================
+// MAIN CONTENT
+// ========================================
+
+main {
+  min-height: calc(100vh - 200px);
+}
+
+.page-content {
+  padding: $spacing-xl;
+
+  @include media-medium {
+    padding: $spacing-xxl $spacing-xl;
+  }
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+
+  @include media-medium {
+    padding: 0 $spacing-lg;
+  }
+}
+
+// ========================================
+// CARDS & CONTAINERS
+// ========================================
+
+.card,
+article {
+  @include container-dark;
+  padding: $spacing-lg;
+  margin-bottom: $spacing-lg;
+  @include hover-lift;
+
+  h2, h3 {
+    margin-top: 0;
+  }
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-lg;
+
+  @include media-medium {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media-large {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// ========================================
+// HOME HERO SECTION
+// ========================================
+
+.home-hero {
+  text-align: center;
+  padding: $spacing-xxl $spacing-lg;
+  background: linear-gradient(135deg, rgba($color-olive-dark, 0.1) 0%, rgba($color-olive-primary, 0.05) 100%);
+  border-radius: $border-radius-lg;
+  margin-bottom: $spacing-xxl;
+
+  h1 {
+    @include slide-in-up;
+    font-size: clamp(2rem, 5vw, $heading-1-size);
+    margin-bottom: $spacing-md;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: $color-text-light;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// ========================================
+// POST LISTING
+// ========================================
+
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-bottom: 0;
+  }
+}
+
+.post-link {
+  display: block;
+  padding: $spacing-md;
+  @include container-dark;
+  margin-bottom: $spacing-lg;
+  transition: all $transition-standard;
+
+  &:hover {
+    transform: translateX(8px);
+    border-left-color: $color-olive-primary;
+    border-left-width: 4px;
+  }
+
+  .post-meta {
+    color: $color-text-muted;
+    font-size: 0.9rem;
+    margin-bottom: $spacing-sm;
+  }
+
+  .post-title {
+    color: $color-olive-primary;
+    font-size: 1.3rem;
+    margin-bottom: $spacing-sm;
+    font-weight: 600;
+  }
+
+  &:hover .post-title {
+    color: $color-olive-light;
+  }
+}
+
+// ========================================
+// RESPONSIVENESS
+// ========================================
+
+@include media-small {
+  .page-content {
+    padding: $spacing-lg;
+  }
+}
+
+@include media-medium {
+  .page-content {
+    padding: $spacing-xl $spacing-lg;
+  }
+}
+
+@include media-large {
+  .page-content {
+    padding: $spacing-xl;
+  }
+}
+
+// ========================================
+// UTILITIES
+// ========================================
+
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: $color-text-muted;
+}
+
+.text-olive {
+  color: $color-olive-primary;
+}
+
+.mt-1 { margin-top: $spacing-md; }
+.mt-2 { margin-top: $spacing-lg; }
+.mt-3 { margin-top: $spacing-xl; }
+
+.mb-1 { margin-bottom: $spacing-md; }
+.mb-2 { margin-bottom: $spacing-lg; }
+.mb-3 { margin-bottom: $spacing-xl; }
+
+.p-1 { padding: $spacing-md; }
+.p-2 { padding: $spacing-lg; }
+.p-3 { padding: $spacing-xl; }
+
+.d-none { display: none; }
+
+.visible-sm {
+  @include media-medium {
+    display: none;
+  }
+}
+
+.hidden-sm {
+  @include media-medium {
+    display: inherit;
+  }
+}
+
+// ========================================
+// MINIMA CUSTOMIZATIONS
+// ========================================
+
+// Hide RSS subscribe link
+.rss-subscribe {
+  display: none;
+}
+
+// Fix GitHub logo sizing
+.social-media-list {
+  svg {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+  }
+
+  li {
+    img,
+    svg {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+}
