@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "¡Bienvenido a mi Portafolio!"
+title: "¡Bienvenido a mi Portfolio!"
 date: 2026-04-29 10:00:00 +0200
 categories: personal
 ---
 
-Hola, soy **Javier Cabello Díaz** y este es el comienzo oficial de mi portafolio web.
+Hola, soy **Javier Cabello Díaz** y este es el comienzo oficial de mi portfolio web.
 
 ## ¿Quién soy?
 
 Soy un estudiante de **Desarrollo de Aplicaciones Web (DAW)** actualmente terminando mis prácticas profesionales. Mi especializacion está en el **backend** con **PHP y Laravel**, aunque creo que un buen desarrollador debe estar siempre en contacto con las nuevas tecnologías.
 
-## ¿Por qué este portafolio?
+## ¿Por qué este portfolio?
 
 Este espacio es mi **vitrina personal** donde compartiré:
 

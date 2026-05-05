@@ -22,8 +22,10 @@
 
 // Override minima's default colors
 .site-title {
-  color: $color-olive-primary;
+  color: $color-text-light;
   font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 
   &:hover {
     color: $color-olive-light;
